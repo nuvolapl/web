@@ -1,0 +1,14 @@
+###> symfony/framework-bundle ###
+/public/bundles/
+/var/*
+!/var/.gitkeep
+/vendor/*
+!/vendor/.gitkeep
+###< symfony/framework-bundle ###
+
+/.idea/
+
+/.terraform/.terraform/
+/.terraform/*.tfstate
+/.terraform/*.tfstate.backup
+/.terraform/.terraform.tfstate.lock.info

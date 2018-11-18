@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+    web:
+        build:
+            args:
+                APP_ENV:    'dev'
+                APP_DEBUG:  1
+                APP_SECRET: 'foo'
