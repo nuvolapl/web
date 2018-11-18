@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+    web:
+        image: '${ECS_ECR_WEB}:latest'
+        build:
+            args:
+                APP_ENV:    'prod'
+                APP_DEBUG:  0
+                APP_SECRET: ${APP_SECRET}
+            context:    '../../web/'
+            dockerfile: './.docker/services/web/Dockerfile'
